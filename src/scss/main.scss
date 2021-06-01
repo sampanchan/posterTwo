@@ -1,0 +1,524 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+
+@import 'reset';
+
+/* 1. Main Layout ================================= */
+
+* {
+	box-sizing: border-box;
+}
+
+/*
+*
+* MEASURE YOUR POSTER and change these two variables !
+* 
+*/
+$poster-width: 24;
+$poster-height: 36;
+
+body {
+	min-height: 100vh;
+	padding: 5vh 5vw;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgb(56, 7, 74);
+	font-family: sans-serif;
+}
+.poster {
+	position: relative;
+
+	overflow: hidden;
+
+	background-color: #086374;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+
+	@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+		width: 90vh * ($poster-width/$poster-height);
+		height: 90vh;
+	}
+
+	@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+		width: 90vw;
+		height: 90vw * ($poster-height/$poster-width);
+	}
+
+	/*
+		Everything in % so it's fully responsive!!!!!
+	*/
+	.rectangle {
+		position: absolute;
+		width: 1.5%; // of the poster width
+		height: 53.333%; // of the poster height
+		// font-size: 2em;
+		// display: flex;
+		// justify-content: center;
+		// align-items: center;
+		// text-align: center;
+	}
+	//middle rectangles
+	.rectangle-one{
+		top: 10%;
+		left: 50%;
+		background: #3B1542;
+		width: 2.75%;
+	}
+	.rectangle-two{
+		top: 12%;
+		left: 52%;
+		background: #AFFC40;
+	}
+	.rectangle-three{
+		top: 14%;
+		left: 54%;
+		background: #00FFAA;
+		width: .75%;
+		height: 33.333%;
+	}
+	.rectangle-four{
+		top: 8%;
+    	left: 56%;
+		background: #AFFC40;
+		width: 1.75%;
+	}
+
+	.rectangle-five{
+		top: 20%;
+		left:55%;
+		background: #AFFC40;
+		height: 33.333%;
+	}
+	.rectangle-six{
+		top: 25%;
+		left: 52%;
+		background: #00FFAA;
+		height: 33.333%;
+		width: 1.75%;
+
+	}
+	.rectangle-seven{
+		top: 12%;
+		left: 52%;
+		background: #AFFC40;
+		width: .75%;
+	}
+	.rectangle-eight{
+		top: 15%;
+    	left: 58%;
+		background: #539FE9;
+		width: 1.75%;
+		height: 33.333%;
+	}
+	.rectangle-nine{
+		top: 15%;
+		left: 48%;
+		background: #3B1542;
+	}
+	.rectangle-ten{
+		top: 10%;
+		left: 62%;
+		background: #AFFC40;
+		width: 2.5%;
+	}
+	.rectangle-eleven{
+		top: 15%;
+		left: 46%;
+		background: #00FFAA;
+		width: .75%;
+	}
+	.rectangle-twelve{
+		top: 17%;
+		left: 45%;
+		background: #3B1542;
+		width: 2.5%;
+		height: 33.333%;
+	}
+	.rectangle-thirteen{
+		top: 4%;
+		left: 54%;
+		background: #00FFAA;
+		width: 2.5%;
+	}
+	.rectangle-fourteen{
+		top: 17%;
+		left: 57%;
+		background: #00FFAA;
+		width: .75%;
+		height: 33.333%;
+	}
+	.rectangle-fifteen{
+		top: 43%;
+		left: 58%;
+		background: #AFFC40;
+		width: 1.75%;
+		height: 33.333%;
+	}
+	.rectangle-sixteen{
+		top: 11%;
+		left: 52%;
+		background: #AFFC40;
+	}
+	.rectangle-seventeen{
+		top: 18%;
+		left: 60%;
+		background: #00FFAA;
+		width: 2.5%;
+		height: 33.333%;
+	}
+	.rectangle-eighteen{
+		top: 16%;
+		left: 46%;
+		background: #539FE9;
+		width: .75%;
+	}
+	.rectangle-nineteen{
+		top: 16%;
+		left: 46%;
+		background: #AFFC40;
+		height: 33.333%;
+	}
+	.rectangle-twenty{
+		top: 20%;
+		left: 51%;
+		background: #539FE9;
+		width: .75%;
+		height: 33.333%;
+	}
+	.rectangle-twenty-one{
+		top: 16%;
+		left: 56%;
+		background: #539FE9;
+		width: .75%;
+	}
+	.rectangle-twenty-two{
+		top: 20%;
+		left: 45%;
+		background: #00FFAA;
+		width:.75%;
+		height: 33.333%;
+	}
+	.rectangle-twenty-three{
+		top: 25%;
+		left: 53%;
+		background: #AFFC40;
+		width: 2.5%;
+		height: 33.333%;
+	}
+	.rectangle-twenty-four{
+		top: 25%;
+		left: 43%;
+		background: #539FE9;
+		width: .75%;
+	}
+	.rectangle-twenty-five{
+		top: 28%;
+		left: 60%;
+		background: #3B1542;
+		width: 2.5%;
+		height: 33.333%;
+	}
+
+	//left rectangles
+	.rectangle-twenty-six{
+		top: 23%;
+    	left: 56%;
+		background: #3B1542;
+		height: 33.333%;
+		
+	}
+	.rectangle-twenty-seven{
+		top: 33%;
+		left: 56%;
+		background: #00FFAA;
+		width: .75%;
+		height: 33.333%;
+	}
+	.rectangle-twenty-eight{
+		top: 27%;
+		left: 52%;
+		background: #3B1542;
+		width: 1.75%;
+	}
+	.rectangle-twenty-nine{
+		top: 47%;
+    	left: 49%;
+		background: #AFFC40;
+		width: .75%;
+		height: 33.333%;
+	}
+	.rectangle-thirty{
+		top: 15%;
+		left: 54%;
+		background: #3B1542;
+		
+	}
+	.rectangle-thirty-one{
+		top: 18%;
+		left: 52%;
+		background: #539FE9;
+		height: 33.333%;
+	}
+	.rectangle-thirty-two{
+		top: 14%;
+		left: 45%;
+		background: #3B1542;
+		width: .75%;
+	}
+	.rectangle-thirty-three{
+		top: 16%;
+		left: 47%;
+		background: #00FFAA;
+		width: .75%;
+		height: 33.333%;
+	}
+	.rectangle-thirty-four{
+		top: 40%;
+		left: 50%;
+		background: #539FE9;
+		width: 1.75%;
+		height: 33.333%;
+	}
+	.rectangle-thirty-five{
+		top: 18%;
+		left: 44%;
+		background: #3B1542;
+		width:.75%;
+		height: 33.333%;
+	}
+
+	//right rectangles
+	.rectangle-thirty-six{
+		top: 18%;
+		left: 62%;
+		background: #539FE9;
+		width: 1.75%;
+	}
+	.rectangle-thirty-seven{
+		top: 19%;
+		left: 65%;
+		background: #3B1542;
+		width: .75%;
+	}
+	.rectangle-thirty-eight{
+		top: 12%;
+		left: 60%;
+		background: #AFFC40;
+		width: .75%;
+	}
+	.rectangle-thirty-nine{
+		top: 18%;
+		left: 66%;
+		background: #539FE9;
+		width: 1.75%;
+	}
+	.rectangle-fourty{
+		top: 21%;
+    	left: 62%;
+		background: #00FFAA;
+		width: 1.25%;
+	}
+	.rectangle-fourty-one{
+		top: 6%;
+		left: 55%;
+		background: #3B1542;
+		width: .75%;
+	}
+	.rectangle-fourty-two{
+		top: 32%;
+    	left: 61%;
+		background: #539FE9;
+		width: 1.75%;
+	}
+	.rectangle-fourty-three{
+		top: 37%;
+		left: 56%;
+		background: #3B1542;
+		width: 1.75%;
+	}
+	.rectangle-fourty-four{
+		top: 14%;
+    	left: 63%;
+		background: #3B1542;
+		width: .75%;
+	}
+	.rectangle-fourty-five{
+		top: 28%;
+		left: 67%;
+		background: #AFFC40;
+		width: 2.5%;
+		height: 33.333%;
+	}
+
+	.circle-container{
+		position: relative;
+		width: 100%;
+		height: 100%;
+
+		.circle-one{
+			position: absolute;
+			top:26%;
+			left:30%;
+			width: 50%;
+			height: 33%;
+			background-color: transparent;
+			border-radius: 50%;
+			border: 0 solid #3B1542;
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				border-width: 4.5vh;
+				// border-color: red;
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				border-width: 5vw;
+				// border-color: blue;
+			}
+		}
+		.half-circle-one{
+			position: absolute;
+			z-index: 2;
+			top: 29%;
+			left: 32%;
+			width: 45%;
+			height: 15%;
+			// transform: rotate(-180deg);
+    		background-color: transparent;
+    		border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    		border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    		border: 0 solid #AFFC40;
+    		border-bottom: 0;
+
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				border-width: .75vh;
+				// border-color: red;
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				border-width: 1.25vw;
+				// border-color: blue;
+			}
+			
+		}
+		.half-circle-two{
+			position: absolute;
+			// top:35%;
+			// left:45%;
+			top: 29%;
+			left: 32%;
+			width: 45%;
+			height: 14%;
+			// transform: rotate(90deg);
+    		background-color: transparent;
+    		border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    		border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    		border: 0 solid #00FFAA;
+			;
+    		border-bottom: 0;
+
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				border-width: 2.75vh;
+				// border-color: red;
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				border-width: 3.5vw;
+				// border-color: blue;
+			}
+		}
+		.circle-three{
+			position: absolute;
+			top:28%;
+			left:33%;
+			width: 45%;
+			height: 29%;
+			background-color: transparent;
+			border-radius: 50%;
+			border: 0 solid #00FFAA;
+
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				border-width: 1.85vh;
+				// border-color: red;
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				border-width: 2.5vw;
+				// border-color: blue;
+			}
+		}
+		.circle-four{
+			position: absolute;
+			top: 29%;
+			left: 34%;
+			width: 42%;
+			height: 27.33%;
+			background-color: transparent;
+			border-radius: 50%;
+			border: 0 solid #3B1542;
+
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				border-width: .5vh;
+				// border-color: red;
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				border-width: 1vw;
+				// border-color: blue;
+			}
+		}
+		
+	}
+
+
+
+
+	.title-one{
+		position: absolute;
+		top:11%;
+		left: -6%;
+		// @media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+		// 	width: 5vw;
+		// 	// border-color: blue;
+		// }
+
+		img{
+			width: 20vw;
+			transform: rotate(-90deg);
+			
+	   }
+	}
+	.title-two{
+		position: absolute;
+		top: 94%;
+    	left: 5%;
+		img{
+			width: 8vw;
+		}
+	}
+	.title-three{
+		position: absolute;
+		top:2%;
+		right:5%;
+		img{
+			width: 8vw;
+		}
+	}
+	.title-four{
+		position: absolute;
+		top: 77%;
+    	right: -23%;
+		img{
+			width: 30vw;
+			transform: rotate(-90deg);
+		}
+	}
+	
+	
+
+
+}

@@ -1,0 +1,550 @@
+/* 
+==============================================
+CONTENT:	Project Name Here
+AUTHOR:		Your Name Here
+==============================================
+
+TABLE OF CONTENTS:
+
+1. Main Layout
+2. Content
+
+==============================================
+*/
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+body {
+	line-height: 1;
+}
+
+ol, ul {
+	list-style: none;
+}
+
+blockquote, q {
+	quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: "";
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* 1. Main Layout ================================= */
+* {
+	box-sizing: border-box;
+}
+
+/*
+*
+* MEASURE YOUR POSTER and change these two variables !
+* 
+*/
+body {
+	min-height: 100vh;
+	padding: 5vh 5vw;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	-webkit-align-items: center;
+	        align-items: center;
+	background: #38074a;
+	font-family: sans-serif;
+}
+
+.poster {
+	position: relative;
+	overflow: hidden;
+	background-color: #086374;
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+	/*
+		Everything in % so it's fully responsive!!!!!
+	*/
+}
+@media (min-aspect-ratio: 24/36) {
+	.poster {
+		width: 60vh;
+		height: 90vh;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster {
+		width: 90vw;
+		height: 135vw;
+	}
+}
+.poster .rectangle {
+	position: absolute;
+	width: 1.5%;
+	height: 53.333%;
+}
+.poster .rectangle-one {
+	top: 10%;
+	left: 50%;
+	background: #3B1542;
+	width: 2.75%;
+}
+.poster .rectangle-two {
+	top: 12%;
+	left: 52%;
+	background: #AFFC40;
+}
+.poster .rectangle-three {
+	top: 14%;
+	left: 54%;
+	background: #00FFAA;
+	width: 0.75%;
+	height: 33.333%;
+}
+.poster .rectangle-four {
+	top: 8%;
+	left: 56%;
+	background: #AFFC40;
+	width: 1.75%;
+}
+.poster .rectangle-five {
+	top: 20%;
+	left: 55%;
+	background: #AFFC40;
+	height: 33.333%;
+}
+.poster .rectangle-six {
+	top: 25%;
+	left: 52%;
+	background: #00FFAA;
+	height: 33.333%;
+	width: 1.75%;
+}
+.poster .rectangle-seven {
+	top: 12%;
+	left: 52%;
+	background: #AFFC40;
+	width: 0.75%;
+}
+.poster .rectangle-eight {
+	top: 15%;
+	left: 58%;
+	background: #539FE9;
+	width: 1.75%;
+	height: 33.333%;
+}
+.poster .rectangle-nine {
+	top: 15%;
+	left: 48%;
+	background: #3B1542;
+}
+.poster .rectangle-ten {
+	top: 10%;
+	left: 62%;
+	background: #AFFC40;
+	width: 2.5%;
+}
+.poster .rectangle-eleven {
+	top: 15%;
+	left: 46%;
+	background: #00FFAA;
+	width: 0.75%;
+}
+.poster .rectangle-twelve {
+	top: 17%;
+	left: 45%;
+	background: #3B1542;
+	width: 2.5%;
+	height: 33.333%;
+}
+.poster .rectangle-thirteen {
+	top: 4%;
+	left: 54%;
+	background: #00FFAA;
+	width: 2.5%;
+}
+.poster .rectangle-fourteen {
+	top: 17%;
+	left: 57%;
+	background: #00FFAA;
+	width: 0.75%;
+	height: 33.333%;
+}
+.poster .rectangle-fifteen {
+	top: 43%;
+	left: 58%;
+	background: #AFFC40;
+	width: 1.75%;
+	height: 33.333%;
+}
+.poster .rectangle-sixteen {
+	top: 11%;
+	left: 52%;
+	background: #AFFC40;
+}
+.poster .rectangle-seventeen {
+	top: 18%;
+	left: 60%;
+	background: #00FFAA;
+	width: 2.5%;
+	height: 33.333%;
+}
+.poster .rectangle-eighteen {
+	top: 16%;
+	left: 46%;
+	background: #539FE9;
+	width: 0.75%;
+}
+.poster .rectangle-nineteen {
+	top: 16%;
+	left: 46%;
+	background: #AFFC40;
+	height: 33.333%;
+}
+.poster .rectangle-twenty {
+	top: 20%;
+	left: 51%;
+	background: #539FE9;
+	width: 0.75%;
+	height: 33.333%;
+}
+.poster .rectangle-twenty-one {
+	top: 16%;
+	left: 56%;
+	background: #539FE9;
+	width: 0.75%;
+}
+.poster .rectangle-twenty-two {
+	top: 20%;
+	left: 45%;
+	background: #00FFAA;
+	width: 0.75%;
+	height: 33.333%;
+}
+.poster .rectangle-twenty-three {
+	top: 25%;
+	left: 53%;
+	background: #AFFC40;
+	width: 2.5%;
+	height: 33.333%;
+}
+.poster .rectangle-twenty-four {
+	top: 25%;
+	left: 43%;
+	background: #539FE9;
+	width: 0.75%;
+}
+.poster .rectangle-twenty-five {
+	top: 28%;
+	left: 60%;
+	background: #3B1542;
+	width: 2.5%;
+	height: 33.333%;
+}
+.poster .rectangle-twenty-six {
+	top: 23%;
+	left: 56%;
+	background: #3B1542;
+	height: 33.333%;
+}
+.poster .rectangle-twenty-seven {
+	top: 33%;
+	left: 56%;
+	background: #00FFAA;
+	width: 0.75%;
+	height: 33.333%;
+}
+.poster .rectangle-twenty-eight {
+	top: 27%;
+	left: 52%;
+	background: #3B1542;
+	width: 1.75%;
+}
+.poster .rectangle-twenty-nine {
+	top: 47%;
+	left: 49%;
+	background: #AFFC40;
+	width: 0.75%;
+	height: 33.333%;
+}
+.poster .rectangle-thirty {
+	top: 15%;
+	left: 54%;
+	background: #3B1542;
+}
+.poster .rectangle-thirty-one {
+	top: 18%;
+	left: 52%;
+	background: #539FE9;
+	height: 33.333%;
+}
+.poster .rectangle-thirty-two {
+	top: 14%;
+	left: 45%;
+	background: #3B1542;
+	width: 0.75%;
+}
+.poster .rectangle-thirty-three {
+	top: 16%;
+	left: 47%;
+	background: #00FFAA;
+	width: 0.75%;
+	height: 33.333%;
+}
+.poster .rectangle-thirty-four {
+	top: 40%;
+	left: 50%;
+	background: #539FE9;
+	width: 1.75%;
+	height: 33.333%;
+}
+.poster .rectangle-thirty-five {
+	top: 18%;
+	left: 44%;
+	background: #3B1542;
+	width: 0.75%;
+	height: 33.333%;
+}
+.poster .rectangle-thirty-six {
+	top: 18%;
+	left: 62%;
+	background: #539FE9;
+	width: 1.75%;
+}
+.poster .rectangle-thirty-seven {
+	top: 19%;
+	left: 65%;
+	background: #3B1542;
+	width: 0.75%;
+}
+.poster .rectangle-thirty-eight {
+	top: 12%;
+	left: 60%;
+	background: #AFFC40;
+	width: 0.75%;
+}
+.poster .rectangle-thirty-nine {
+	top: 18%;
+	left: 66%;
+	background: #539FE9;
+	width: 1.75%;
+}
+.poster .rectangle-fourty {
+	top: 21%;
+	left: 62%;
+	background: #00FFAA;
+	width: 1.25%;
+}
+.poster .rectangle-fourty-one {
+	top: 6%;
+	left: 55%;
+	background: #3B1542;
+	width: 0.75%;
+}
+.poster .rectangle-fourty-two {
+	top: 32%;
+	left: 61%;
+	background: #539FE9;
+	width: 1.75%;
+}
+.poster .rectangle-fourty-three {
+	top: 37%;
+	left: 56%;
+	background: #3B1542;
+	width: 1.75%;
+}
+.poster .rectangle-fourty-four {
+	top: 14%;
+	left: 63%;
+	background: #3B1542;
+	width: 0.75%;
+}
+.poster .rectangle-fourty-five {
+	top: 28%;
+	left: 67%;
+	background: #AFFC40;
+	width: 2.5%;
+	height: 33.333%;
+}
+.poster .circle-container {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+.poster .circle-container .circle-one {
+	position: absolute;
+	top: 26%;
+	left: 30%;
+	width: 50%;
+	height: 33%;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 0 solid #3B1542;
+}
+@media (min-aspect-ratio: 24/36) {
+	.poster .circle-container .circle-one {
+		border-width: 4.5vh;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .circle-container .circle-one {
+		border-width: 5vw;
+	}
+}
+.poster .circle-container .half-circle-one {
+	position: absolute;
+	z-index: 2;
+	top: 29%;
+	left: 32%;
+	width: 45%;
+	height: 15%;
+	background-color: transparent;
+	border-top-left-radius: 110px;
+	/* 100px of height + 10px of border */
+	border-top-right-radius: 110px;
+	/* 100px of height + 10px of border */
+	border: 0 solid #AFFC40;
+	border-bottom: 0;
+}
+@media (min-aspect-ratio: 24/36) {
+	.poster .circle-container .half-circle-one {
+		border-width: 0.75vh;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .circle-container .half-circle-one {
+		border-width: 1.25vw;
+	}
+}
+.poster .circle-container .half-circle-two {
+	position: absolute;
+	top: 29%;
+	left: 32%;
+	width: 45%;
+	height: 14%;
+	background-color: transparent;
+	border-top-left-radius: 110px;
+	/* 100px of height + 10px of border */
+	border-top-right-radius: 110px;
+	/* 100px of height + 10px of border */
+	border: 0 solid #00FFAA;
+	border-bottom: 0;
+}
+@media (min-aspect-ratio: 24/36) {
+	.poster .circle-container .half-circle-two {
+		border-width: 2.75vh;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .circle-container .half-circle-two {
+		border-width: 3.5vw;
+	}
+}
+.poster .circle-container .circle-three {
+	position: absolute;
+	top: 28%;
+	left: 33%;
+	width: 45%;
+	height: 29%;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 0 solid #00FFAA;
+}
+@media (min-aspect-ratio: 24/36) {
+	.poster .circle-container .circle-three {
+		border-width: 1.85vh;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .circle-container .circle-three {
+		border-width: 2.5vw;
+	}
+}
+.poster .circle-container .circle-four {
+	position: absolute;
+	top: 29%;
+	left: 34%;
+	width: 42%;
+	height: 27.33%;
+	background-color: transparent;
+	border-radius: 50%;
+	border: 0 solid #3B1542;
+}
+@media (min-aspect-ratio: 24/36) {
+	.poster .circle-container .circle-four {
+		border-width: 0.5vh;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .circle-container .circle-four {
+		border-width: 1vw;
+	}
+}
+.poster .title-one {
+	position: absolute;
+	top: 11%;
+	left: -6%;
+}
+.poster .title-one img {
+	width: 20vw;
+	-webkit-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+}
+.poster .title-two {
+	position: absolute;
+	top: 94%;
+	left: 5%;
+}
+.poster .title-two img {
+	width: 8vw;
+}
+.poster .title-three {
+	position: absolute;
+	top: 2%;
+	right: 5%;
+}
+.poster .title-three img {
+	width: 8vw;
+}
+.poster .title-four {
+	position: absolute;
+	top: 77%;
+	right: -23%;
+}
+.poster .title-four img {
+	width: 30vw;
+	-webkit-transform: rotate(-90deg);
+	        transform: rotate(-90deg);
+}
+/*# sourceMappingURL=main.css.map */
