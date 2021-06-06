@@ -119,9 +119,9 @@ body {
 }
 .poster .rectangle:hover {
 	transition: background 0s;
-	-webkit-transform: scale(2);
-	        transform: scale(2);
-	background: white;
+	-webkit-transform: scale(1.15);
+	        transform: scale(1.15);
+	box-shadow: 0px 8px 21px 13px rgba(33, 197, 94, 0.67), 2px 6px 20px 0 rgba(255, 255, 255, 0.52);
 }
 .poster .rectangle-one {
 	top: 10%;
@@ -421,6 +421,7 @@ body {
 	background-color: transparent;
 	border-radius: 50%;
 	border: 0 solid #3B1542;
+	box-shadow: 0 6px 8px 0 rgba(132, 74, 215, 0.65), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .circle-container .circle-one {
@@ -433,19 +434,13 @@ body {
 	}
 }
 .poster .circle-container .half-circle-one {
+	overflow: hidden;
 	position: absolute;
 	z-index: 2;
 	top: 29%;
 	left: 32%;
 	width: 45%;
 	height: 15%;
-	background-color: transparent;
-	border-top-left-radius: 110px;
-	/* 100px of height + 10px of border */
-	border-top-right-radius: 110px;
-	/* 100px of height + 10px of border */
-	border: 0 solid #AFFC40;
-	border-bottom: 0;
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .circle-container .half-circle-one {
@@ -457,18 +452,24 @@ body {
 		border-width: 1.25vw;
 	}
 }
+.poster .circle-container .half-circle-one .green-half-circle {
+	top: 29%;
+	left: 32%;
+	width: 100%;
+	height: 196%;
+	background: transparent;
+	border: 10px solid #AFFC40;
+	border-radius: 50%;
+	box-shadow: 0 6px 8px 0 rgba(132, 74, 215, 0.65), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .poster .circle-container .half-circle-two {
+	overflow: hidden;
 	position: absolute;
 	top: 29%;
 	left: 32%;
 	width: 45%;
-	height: 14%;
+	height: 15%;
 	background-color: transparent;
-	border-top-left-radius: 110px;
-	/* 100px of height + 10px of border */
-	border-top-right-radius: 110px;
-	/* 100px of height + 10px of border */
-	border: 0 solid #00FFAA;
 	border-bottom: 0;
 }
 @media (min-aspect-ratio: 24/36) {
@@ -481,6 +482,16 @@ body {
 		border-width: 3.5vw;
 	}
 }
+.poster .circle-container .half-circle-two .turq-half-circle {
+	top: 29%;
+	left: 32%;
+	width: 100%;
+	height: 196%;
+	background: transparent;
+	border: 15px solid #00FFAA;
+	border-radius: 50%;
+	box-shadow: 0 6px 8px 0 rgba(132, 74, 215, 0.65), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
 .poster .circle-container .circle-three {
 	position: absolute;
 	top: 28%;
@@ -490,6 +501,7 @@ body {
 	background-color: transparent;
 	border-radius: 50%;
 	border: 0 solid #00FFAA;
+	box-shadow: 0 6px 8px 0 rgba(132, 74, 215, 0.65), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .circle-container .circle-three {
@@ -510,6 +522,7 @@ body {
 	background-color: transparent;
 	border-radius: 50%;
 	border: 0 solid #3B1542;
+	box-shadow: 0 6px 8px 0 rgba(132, 74, 215, 0.65), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .circle-container .circle-four {
@@ -523,38 +536,62 @@ body {
 }
 .poster .title-one {
 	position: absolute;
-	top: 11%;
-	left: -6%;
+	top: 3%;
+	left: 5%;
 }
-.poster .title-one img {
-	width: 50%;
-	-webkit-transform: rotate(-90deg);
-	        transform: rotate(-90deg);
+@media (min-aspect-ratio: 24/36) {
+	.poster .title-one img {
+		width: 2vw;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .title-one img {
+		width: 5vw;
+	}
 }
 .poster .title-two {
 	position: absolute;
-	top: 94%;
+	top: 93%;
 	left: 5%;
 }
-.poster .title-two img {
-	width: 40%;
+@media (min-aspect-ratio: 24/36) {
+	.poster .title-two img {
+		width: 5vw;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .title-two img {
+		width: 6vw;
+	}
 }
 .poster .title-three {
 	position: absolute;
 	top: 2%;
 	right: 5%;
 }
-.poster .title-three img {
-	width: 8vw;
+@media (min-aspect-ratio: 24/36) {
+	.poster .title-three img {
+		width: 6vw;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .title-three img {
+		width: 7vw;
+	}
 }
 .poster .title-four {
 	position: absolute;
-	top: 77%;
-	right: -23%;
+	top: 50%;
+	right: -10%;
 }
-.poster .title-four img {
-	width: 30vw;
-	-webkit-transform: rotate(-90deg);
-	        transform: rotate(-90deg);
+@media (min-aspect-ratio: 24/36) {
+	.poster .title-four img {
+		width: 8vw;
+	}
+}
+@media (max-aspect-ratio: 24/36) {
+	.poster .title-four img {
+		width: 6vw;
+	}
 }
 /*# sourceMappingURL=main.css.map */

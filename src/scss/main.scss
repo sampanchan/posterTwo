@@ -72,8 +72,9 @@ body {
 		transform: scale(1);
 		&:hover {
 			transition: background 0s;
-			transform: scale(2);
-			background: white;
+			transform: scale(1.15);
+			// background: white;
+			box-shadow: 0px 8px 21px 13px rgb(33 197 94 / 67%), 2px 6px 20px 0 rgb(255 255 255 / 52%);
 		}
 	}
 	//middle rectangles
@@ -384,6 +385,7 @@ body {
 			background-color: transparent;
 			border-radius: 50%;
 			border: 0 solid #3B1542;
+			box-shadow: 0 6px 8px 0 rgb(132 74 215 / 65%), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
 				border-width: 4.5vh;
 				// border-color: red;
@@ -394,6 +396,7 @@ body {
 			}
 		}
 		.half-circle-one{
+			overflow: hidden;
 			position: absolute;
 			z-index: 2;
 			top: 29%;
@@ -401,11 +404,11 @@ body {
 			width: 45%;
 			height: 15%;
 			// transform: rotate(-180deg);
-    		background-color: transparent;
-    		border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-    		border-top-right-radius: 110px; /* 100px of height + 10px of border */
-    		border: 0 solid #AFFC40;
-    		border-bottom: 0;
+    		// background-color: transparent;
+    		// border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    		// border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    		// border: 0 solid #AFFC40;
+    		// border-bottom: 0;
 
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
 				border-width: .75vh;
@@ -415,21 +418,32 @@ body {
 				border-width: 1.25vw;
 				// border-color: blue;
 			}
+			.green-half-circle{
+				top: 29%;
+				left: 32%;
+				width: 100%;
+				height: 196%;
+				background: transparent ;
+				border: 10px solid #AFFC40;
+				border-radius: 50%;
+				box-shadow: 0 6px 8px 0 rgb(132 74 215 / 65%), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
 			
 		}
 		.half-circle-two{
+			overflow: hidden;
 			position: absolute;
 			// top:35%;
 			// left:45%;
 			top: 29%;
 			left: 32%;
 			width: 45%;
-			height: 14%;
+			height: 15%;
 			// transform: rotate(90deg);
     		background-color: transparent;
-    		border-top-left-radius: 110px;  /* 100px of height + 10px of border */
-    		border-top-right-radius: 110px; /* 100px of height + 10px of border */
-    		border: 0 solid #00FFAA;
+    		// border-top-left-radius: 110px;  /* 100px of height + 10px of border */
+    		// border-top-right-radius: 110px; /* 100px of height + 10px of border */
+    		// border: 0 solid #00FFAA;
 			;
     		border-bottom: 0;
 
@@ -441,6 +455,16 @@ body {
 				border-width: 3.5vw;
 				// border-color: blue;
 			}
+			.turq-half-circle{
+				top: 29%;
+				left: 32%;
+				width: 100%;
+				height: 196%;
+				background: transparent ;
+				border: 15px solid #00FFAA;
+				border-radius: 50%;
+				box-shadow: 0 6px 8px 0 rgb(132 74 215 / 65%), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
 		}
 		.circle-three{
 			position: absolute;
@@ -451,6 +475,7 @@ body {
 			background-color: transparent;
 			border-radius: 50%;
 			border: 0 solid #00FFAA;
+			box-shadow: 0 6px 8px 0 rgb(132 74 215 / 65%), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
 				border-width: 1.85vh;
@@ -470,6 +495,7 @@ body {
 			background-color: transparent;
 			border-radius: 50%;
 			border: 0 solid #3B1542;
+			box-shadow: 0 6px 8px 0 rgb(132 74 215 / 65%), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
 				border-width: .5vh;
@@ -488,25 +514,41 @@ body {
 
 	.title-one{
 		position: absolute;
-		top:11%;
-		left: -6%;
+		top:3%;
+		left: 5%;
 		// @media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
 		// 	width: 5vw;
 		// 	// border-color: blue;
 		// }
 
 		img{
-			width: 50%;
-			transform: rotate(-90deg);
+			// width: 110%;
+			// transform: rotate(-90deg);
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				width: 2vw;
+				
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				width: 5vw;
+				
+			}
 			
 	   }
 	}
 	.title-two{
 		position: absolute;
-		top: 94%;
+		top: 93%;
     	left: 5%;
 		img{
-			width: 40%;
+			
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				width: 5vw;
+				
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				width: 6vw;
+				
+			}
 		}
 	}
 	.title-three{
@@ -514,16 +556,33 @@ body {
 		top:2%;
 		right:5%;
 		img{
-			width: 8vw;
+			
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				width: 6vw;
+				
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				width: 7vw;
+				
+			}
 		}
 	}
 	.title-four{
 		position: absolute;
-		top: 77%;
-    	right: -23%;
+		top: 50%;
+    	right: -10%;
 		img{
-			width: 30vw;
-			transform: rotate(-90deg);
+			
+			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
+				width: 8vw;
+				
+				
+				
+			}
+			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
+				width: 6vw;
+		
+			}
 		}
 	}
 	
