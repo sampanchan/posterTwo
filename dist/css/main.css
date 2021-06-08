@@ -119,8 +119,9 @@ body {
 }
 .poster .rectangle:hover {
 	transition: background 0s;
-	-webkit-transform: scale(1.15);
-	        transform: scale(1.15);
+	-webkit-transform: scale(2);
+	        transform: scale(2);
+	background: #622ccf;
 	box-shadow: 0px 8px 21px 13px rgba(33, 197, 94, 0.67), 2px 6px 20px 0 rgba(255, 255, 255, 0.52);
 }
 .poster .rectangle-one {
@@ -406,6 +407,111 @@ body {
 	width: 2.5%;
 	height: 33.333%;
 }
+.poster .rectangle-fourty-six {
+	top: 28%;
+	left: 70%;
+	background: #539FE9;
+	width: 1.5%;
+	height: 49.333%;
+}
+.poster .rectangle-fourty-seven {
+	top: 28%;
+	left: 72%;
+	background: #3B1542;
+	width: 2%;
+	height: 33.333%;
+}
+.poster .rectangle-fourty-eight {
+	top: 28%;
+	left: 40%;
+	background: #539FE9;
+	width: 2%;
+	height: 33.333%;
+}
+.poster .rectangle-fourty-nine {
+	top: 28%;
+	left: 71%;
+	background: #00FFAA;
+	width: 1.75%;
+	height: 44.333%;
+}
+.poster .rectangle-fifty {
+	top: 19%;
+	left: 38%;
+	background: #AFFC40;
+	width: 2.5%;
+	height: 33.333%;
+}
+.poster .rectangle-fifty-one {
+	top: 28%;
+	left: 43%;
+	background: #3B1542;
+	width: 1.5%;
+	height: 38.333%;
+}
+.poster .rectangle-fifty-two {
+	top: 14%;
+	left: 43%;
+	background: #539FE9;
+	width: 2.5%;
+	height: 33.333%;
+}
+.poster .rectangle-fifty-three {
+	top: 21%;
+	left: 70%;
+	background: #00FFAA;
+	width: 2.5%;
+	height: 33.333%;
+}
+.poster .rectangle-fifty-four {
+	top: 41%;
+	left: 67%;
+	background: #AFFC40;
+	width: 2%;
+	height: 35.333%;
+}
+.poster .rectangle-fifty-five {
+	top: 30%;
+	left: 70%;
+	background: #3B1542;
+	width: 2.5%;
+	height: 37.333%;
+}
+.poster .rectangle-fifty-six {
+	top: 28%;
+	left: 52%;
+	background: #AFFC40;
+	width: 1.5%;
+	height: 43.333%;
+}
+.poster .rectangle-fifty-seven {
+	top: 22%;
+	left: 71%;
+	background: #539FE9;
+	width: 2%;
+	height: 53.333%;
+}
+.poster .rectangle-fifty-eight {
+	top: 28%;
+	left: 74%;
+	background: #3B1542;
+	width: 1.5%;
+	height: 53.333%;
+}
+.poster .rectangle-fifty-nine {
+	top: 28%;
+	left: 49%;
+	background: #3B1542;
+	width: 2.5%;
+	height: 42.333%;
+}
+.poster .rectangle-sixty {
+	top: 28%;
+	left: 67%;
+	background: #AFFC40;
+	width: 2.5%;
+	height: 33.333%;
+}
 .poster .circle-container {
 	position: relative;
 	width: 100%;
@@ -415,9 +521,9 @@ body {
 .poster .circle-container .circle-one {
 	position: absolute;
 	top: 26%;
-	left: 30%;
-	width: 50%;
-	height: 33%;
+	left: 22%;
+	width: 65%;
+	height: 43%;
 	background-color: transparent;
 	border-radius: 50%;
 	border: 0 solid #3B1542;
@@ -437,10 +543,10 @@ body {
 	overflow: hidden;
 	position: absolute;
 	z-index: 2;
-	top: 29%;
-	left: 32%;
-	width: 45%;
-	height: 15%;
+	top: 27%;
+	left: 26%;
+	width: 57%;
+	height: 19%;
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .circle-container .half-circle-one {
@@ -465,10 +571,10 @@ body {
 .poster .circle-container .half-circle-two {
 	overflow: hidden;
 	position: absolute;
-	top: 29%;
-	left: 32%;
-	width: 45%;
-	height: 15%;
+	top: 26%;
+	left: 26%;
+	width: 57%;
+	height: 20%;
 	background-color: transparent;
 	border-bottom: 0;
 }
@@ -495,9 +601,9 @@ body {
 .poster .circle-container .circle-three {
 	position: absolute;
 	top: 28%;
-	left: 33%;
-	width: 45%;
-	height: 29%;
+	left: 26%;
+	width: 57%;
+	height: 38%;
 	background-color: transparent;
 	border-radius: 50%;
 	border: 0 solid #00FFAA;
@@ -516,9 +622,9 @@ body {
 .poster .circle-container .circle-four {
 	position: absolute;
 	top: 29%;
-	left: 34%;
-	width: 42%;
-	height: 27.33%;
+	left: 28%;
+	width: 53%;
+	height: 35.33%;
 	background-color: transparent;
 	border-radius: 50%;
 	border: 0 solid #3B1542;
@@ -541,7 +647,7 @@ body {
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .title-one img {
-		width: 2vw;
+		width: 3vw;
 	}
 }
 @media (max-aspect-ratio: 24/36) {
@@ -556,7 +662,7 @@ body {
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .title-two img {
-		width: 5vw;
+		width: 8vw;
 	}
 }
 @media (max-aspect-ratio: 24/36) {
@@ -571,7 +677,7 @@ body {
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .title-three img {
-		width: 6vw;
+		width: 10vw;
 	}
 }
 @media (max-aspect-ratio: 24/36) {
@@ -586,7 +692,7 @@ body {
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .title-four img {
-		width: 8vw;
+		width: 10vw;
 	}
 }
 @media (max-aspect-ratio: 24/36) {

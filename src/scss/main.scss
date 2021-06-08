@@ -72,8 +72,8 @@ body {
 		transform: scale(1);
 		&:hover {
 			transition: background 0s;
-			transform: scale(1.15);
-			// background: white;
+			transform: scale(2);
+			background: rgb(98, 44, 207);
 			box-shadow: 0px 8px 21px 13px rgb(33 197 94 / 67%), 2px 6px 20px 0 rgb(255 255 255 / 52%);
 		}
 	}
@@ -370,6 +370,113 @@ body {
 		height: 33.333%;
 	}
 
+	.rectangle-fourty-six{
+		top: 28%;
+		left: 70%;
+		background: #539FE9;
+		width: 1.5%;
+		height: 49.333%;
+	}
+	.rectangle-fourty-seven{
+		top: 28%;
+		left: 72%;
+		background: #3B1542;
+		width: 2%;
+		height: 33.333%;
+	}
+	.rectangle-fourty-eight{
+		top: 28%;
+		left: 40%;
+		background: #539FE9;
+		width: 2%;
+		height: 33.333%;
+	}
+	.rectangle-fourty-nine{
+		top: 28%;
+		left: 71%;
+		background: #00FFAA;
+		width: 1.75%;
+		height: 44.333%;
+	}
+	.rectangle-fifty{
+		top: 19%;
+		left: 38%;
+		background: #AFFC40;
+		width: 2.5%;
+		height: 33.333%;
+	}
+	.rectangle-fifty-one{
+		top: 28%;
+		left: 43%;
+		background: #3B1542;
+		width: 1.5%;
+		height: 38.333%;
+	}
+	.rectangle-fifty-two{
+		top: 14%;
+		left: 43%;
+		background: #539FE9;
+		width: 2.5%;
+		height: 33.333%;
+	}
+
+	.rectangle-fifty-three{
+		top: 21%;
+		left: 70%;
+		background: #00FFAA;
+		width: 2.5%;
+		height: 33.333%;
+	}
+	.rectangle-fifty-four{
+		top: 41%;
+		left: 67%;
+		background: #AFFC40;
+		width: 2%;
+		height: 35.333%;
+	}
+	.rectangle-fifty-five{
+		top: 30%;
+		left: 70%;
+		background: #3B1542;
+		width: 2.5%;
+		height: 37.333%;
+	}
+	.rectangle-fifty-six{
+		top: 28%;
+		left: 52%;
+		background: #AFFC40;
+		width: 1.5%;
+		height: 43.333%;
+	}
+	.rectangle-fifty-seven{
+		top: 22%;
+		left: 71%;
+		background: #539FE9;
+		width: 2%;
+		height: 53.333%;
+	}
+	.rectangle-fifty-eight{
+		top: 28%;
+		left: 74%;
+		background: #3B1542;
+		width: 1.5%;
+		height: 53.333%;
+	}
+	.rectangle-fifty-nine{
+		top: 28%;
+		left: 49%;
+		background: #3B1542;
+		width: 2.5%;
+		height: 42.333%;
+	}
+	.rectangle-sixty{
+		top: 28%;
+		left: 67%;
+		background: #AFFC40;
+		width: 2.5%;
+		height: 33.333%;
+	}
+
 	.circle-container{
 		position: relative;
 		width: 100%;
@@ -379,9 +486,9 @@ body {
 		.circle-one{
 			position: absolute;
 			top:26%;
-			left:30%;
-			width: 50%;
-			height: 33%;
+			left:22%;
+			width: 65%;
+			height: 43%;
 			background-color: transparent;
 			border-radius: 50%;
 			border: 0 solid #3B1542;
@@ -399,10 +506,10 @@ body {
 			overflow: hidden;
 			position: absolute;
 			z-index: 2;
-			top: 29%;
-			left: 32%;
-			width: 45%;
-			height: 15%;
+			top: 27%;
+			left: 26%;
+			width: 57%;
+			height: 19%;
 			// transform: rotate(-180deg);
     		// background-color: transparent;
     		// border-top-left-radius: 110px;  /* 100px of height + 10px of border */
@@ -435,10 +542,10 @@ body {
 			position: absolute;
 			// top:35%;
 			// left:45%;
-			top: 29%;
-			left: 32%;
-			width: 45%;
-			height: 15%;
+			top: 26%;
+			left: 26%;
+			width: 57%;
+			height: 20%;
 			// transform: rotate(90deg);
     		background-color: transparent;
     		// border-top-left-radius: 110px;  /* 100px of height + 10px of border */
@@ -469,9 +576,9 @@ body {
 		.circle-three{
 			position: absolute;
 			top:28%;
-			left:33%;
-			width: 45%;
-			height: 29%;
+			left:26%;
+			width: 57%;
+			height: 38%;
 			background-color: transparent;
 			border-radius: 50%;
 			border: 0 solid #00FFAA;
@@ -489,9 +596,9 @@ body {
 		.circle-four{
 			position: absolute;
 			top: 29%;
-			left: 34%;
-			width: 42%;
-			height: 27.33%;
+			left: 28%;
+			width: 53%;
+			height: 35.33%;
 			background-color: transparent;
 			border-radius: 50%;
 			border: 0 solid #3B1542;
@@ -525,7 +632,7 @@ body {
 			// width: 110%;
 			// transform: rotate(-90deg);
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
-				width: 2vw;
+				width: 3vw;
 				
 			}
 			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
@@ -542,7 +649,7 @@ body {
 		img{
 			
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
-				width: 5vw;
+				width: 8vw;
 				
 			}
 			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
@@ -558,7 +665,7 @@ body {
 		img{
 			
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
-				width: 6vw;
+				width: 10vw;
 				
 			}
 			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
@@ -574,7 +681,7 @@ body {
 		img{
 			
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
-				width: 8vw;
+				width: 10vw;
 				
 				
 				

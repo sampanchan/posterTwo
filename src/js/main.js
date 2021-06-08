@@ -37,7 +37,7 @@ gsap.to(".half-circle-two", {
 })
 gsap.to(".circle-one",{
 		duration: 1,
-		x: "20%",
+		x: "15%",
 		repeat: -1,
 		yoyo: true,
 		delay:2,
@@ -45,7 +45,7 @@ gsap.to(".circle-one",{
 })
 gsap.to(".circle-three",{
 	duration: 1,
-	x: "-20%",
+	x: "-35%",
 	repeat: -1,
 	yoyo: true,
 	delay:4,
@@ -54,7 +54,7 @@ gsap.to(".circle-three",{
 })
 gsap.to(".circle-four",{
 	duration: 1,
-	y: "-20%",
+	y: "-30%",
 	repeat: -1,
 	yoyo: true,
 	delay:4,
