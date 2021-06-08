@@ -632,7 +632,7 @@ body {
 			// width: 110%;
 			// transform: rotate(-90deg);
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
-				width: 3vw;
+				width: 2vw;
 				
 			}
 			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
@@ -649,7 +649,7 @@ body {
 		img{
 			
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
-				width: 8vw;
+				width: 6vw;
 				
 			}
 			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
@@ -665,7 +665,7 @@ body {
 		img{
 			
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
-				width: 10vw;
+				width: 7vw;
 				
 			}
 			@media (max-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained width
@@ -681,7 +681,7 @@ body {
 		img{
 			
 			@media (min-aspect-ratio: #{$poster-width}/#{$poster-height}) { // constained height
-				width: 10vw;
+				width: 7vw;
 				
 				
 				

@@ -647,7 +647,7 @@ body {
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .title-one img {
-		width: 3vw;
+		width: 2vw;
 	}
 }
 @media (max-aspect-ratio: 24/36) {
@@ -662,7 +662,7 @@ body {
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .title-two img {
-		width: 8vw;
+		width: 6vw;
 	}
 }
 @media (max-aspect-ratio: 24/36) {
@@ -677,7 +677,7 @@ body {
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .title-three img {
-		width: 10vw;
+		width: 7vw;
 	}
 }
 @media (max-aspect-ratio: 24/36) {
@@ -692,7 +692,7 @@ body {
 }
 @media (min-aspect-ratio: 24/36) {
 	.poster .title-four img {
-		width: 10vw;
+		width: 7vw;
 	}
 }
 @media (max-aspect-ratio: 24/36) {
